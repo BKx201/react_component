@@ -1,0 +1,169 @@
+.mainbox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  padding-top: 0;
+
+  .video-js {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  &:hover .videobar {
+    display: block;
+  }
+
+  .videobar {
+    /* display: none; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 76px;
+    background-color: #1e2026;
+    z-index: 99;
+    transition: transform .5s ease-out, opacity .5s ease-out;
+
+    &.hide {
+      transform: translateY(76px);
+    }
+
+    button {
+      background: none;
+      border: none;
+      color: inherit;
+      display: inline-block;
+      font-size: inherit;
+      line-height: inherit;
+      text-transform: none;
+      text-decoration: none;
+      transition: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+
+      outline: none;
+      box-shadow: none;
+      margin: 13px 3%;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 30px;
+      text-align: center;
+      border-radius: 50%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-color: #2b2e3a;
+      color: #cccccc;
+    }
+
+    button:nth-child(n+5) {
+      float: right;
+    }
+
+    button {
+      float: left;
+    }
+
+    button:hover {
+      color: #306dd1;
+    }
+  }
+
+  // .videobar
+
+  // .videobar .videobar .videobar .videobar
+}
+
+
+
+.mainbox.mobile {
+
+  .videobar {
+    height: 46px;
+
+    button {
+      margin: 6px 9px;
+      width: 32px;
+      height: 32px;
+      line-height: 20px;
+      font-size: 20px;
+      text-align: center;
+      border-radius: 50%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-color: #2b2e3a;
+      color: #cccccc;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+/* .videobar button:nth-child(1){
+    background-image: url(../../../assets/images/video-btn/play.png);
+}
+.videobar button:nth-child(1):hover{
+    background-image: url(../../../assets/images/video-btn/play1.png);
+}
+.videobar button.topause:nth-child(1){
+    background-image: url(../../../assets/images/video-btn/pause.png);
+}
+.videobar button.topause:nth-child(1):hover{
+    background-image: url(../../../assets/images/video-btn/pause1.png);
+}
+
+.videobar button:nth-child(2){
+    background-image: url(../../../assets/images/video-btn/live.png);
+}
+.videobar button:nth-child(2):hover{
+    background-image: url(../../../assets/images/video-btn/live1.png);
+}
+
+.videobar button.toplayback:nth-child(2){
+    background-image: url(../../../assets/images/video-btn/playback.png);
+}
+.videobar button.toplayback:nth-child(2):hover{
+    background-image: url(../../../assets/images/video-btn/playback1.png);
+}
+
+.videobar button:nth-child(3){
+    background-image: url(../../../assets/images/video-btn/screenshot.png);
+}
+.videobar button:nth-child(3):hover{
+    background-image: url(../../../assets/images/video-btn/screenshot1.png);
+}
+
+.videobar button:nth-child(4){
+    background-image: url(../../../assets/images/video-btn/videorecord.png);
+}
+.videobar button:nth-child(4):hover{
+    background-image: url(../../../assets/images/video-btn/videorecord1.png);
+}
+
+.videobar button:nth-child(5){
+    background-image: url(../../../assets/images/video-btn/fullscreen.png);
+}
+.videobar button:nth-child(5):hover{
+    background-image: url(../../../assets/images/video-btn/fullscreen1.png);
+}
+
+.videobar button.tosmall:nth-child(5){
+    background-image: url(../../../assets/images/video-btn/cxk.png);
+}
+.videobar button.tosmall:nth-child(5):hover{
+    background-image: url(../../../assets/images/video-btn/cxk1.png);
+} */

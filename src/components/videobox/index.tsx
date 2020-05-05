@@ -1,0 +1,1 @@
+export { VideoPlayerBox } from './videoplayer';
