@@ -120,6 +120,7 @@ const VideoPlayerBox: React.FC<Props> = (props) => {
 
   useEffect(() => {
     let newplayer: videojs.Player;
+    // 只有输入的 视频地址大于 5位字字符 才进行初始化;
     if (props.videoUrl.length > 5) {
       newplayer = initPlayer();
       console.log(newplayer);

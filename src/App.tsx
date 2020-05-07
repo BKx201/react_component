@@ -1,16 +1,19 @@
 import React from 'react';
 import './App.css';
-import { VideoPlayerBox } from 'components/videobox';
 
-function App() {
+// import { VideoPage } from 'page/video-page';
+import { TestPage } from 'page/test-page';
+// import { ChartRoom } from 'page/chart-room';
+
+const App: React.FC = () => {
   return (
     <div className="App">
       <div className={'tit'}> 123</div>
-      <div className={'box'}>
-        <VideoPlayerBox videoUrl={''} />
-      </div>
+      <TestPage />
+      {/* <VideoPage /> */}
+      {/* <ChartRoom /> */}
     </div>
   );
-}
+};
 
 export default App;
